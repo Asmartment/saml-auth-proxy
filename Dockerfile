@@ -11,4 +11,5 @@ RUN apk add --no-cache -U \
   ca-certificates
 
 COPY --from=builder /app/saml-auth-proxy /usr/bin
-ENTRYPOINT ["/usr/bin/saml-auth-proxy"]
+ENTRYPOINT ["ash"]
+#ENTRYPOINT ["/usr/bin/saml-auth-proxy"]
